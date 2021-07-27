@@ -15,11 +15,11 @@ Command line tool for generating Dabble Lab content and assets.
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g content-cli
+$ npm install -g @dabblelab/content-cli
 $ content-cli COMMAND
 running command...
 $ content-cli (-v|--version|version)
-content-cli/0.0.0 darwin-x64 node-v14.15.0
+@dabblelab/content-cli/1.0.1-alpha.1 darwin-x64 node-v14.15.0
 $ content-cli --help [COMMAND]
 USAGE
   $ content-cli COMMAND
@@ -28,25 +28,8 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`content-cli image`](#content-cli-image)
 * [`content-cli help [COMMAND]`](#content-cli-help-command)
-
-## `content-cli image`
-
-Create a new YouTube or GitHub image asset.
-
-```
-USAGE
-  $ content-cli image
-
-OPTIONS
-  -h, --headline=the topic headline or title
-  -s, --style=style name ('purple-orange','orange-purple','blue-green','green-blue','purple-blue','blue-purple')
-
-DESCRIPTION
-  ...
-  The resulting image will be created in the current working directory.
-```
+* [`content-cli image`](#content-cli-image)
 
 ## `content-cli help [COMMAND]`
 
@@ -63,4 +46,24 @@ OPTIONS
   --all  see all commands in CLI
 ```
 
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2/src/commands/help.ts)_
+
+## `content-cli image`
+
+Create a new YouTube or GitHub image asset.
+
+```
+USAGE
+  $ content-cli image
+
+OPTIONS
+  -h, --headline=headline                                                                headline for poster images
+  -s, --style=purple-orange|orange-purple|blue-green|green-blue|purple-blue|blue-purple  image style
+
+DESCRIPTION
+  ...
+  Resulting image will be created in the current working directory.
+```
+
+_See code: [src/commands/image.js](https://github.com/dabblelab/content-cli/blob/v1.0.1-alpha.1/src/commands/image.js)_
 <!-- commandsstop -->
