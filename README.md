@@ -1,4 +1,4 @@
-content-cli
+Dabble Lab Content CLI
 ===========
 
 Command line tool for generating Dabble Lab content and assets.
@@ -28,26 +28,25 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`content-cli hello`](#content-cli-hello)
+* [`content-cli image`](#content-cli-image)
 * [`content-cli help [COMMAND]`](#content-cli-help-command)
 
-## `content-cli hello`
+## `content-cli image`
 
-Describe the command here
+Create a new YouTube or GitHub image asset.
 
 ```
 USAGE
-  $ content-cli hello
+  $ content-cli image
 
 OPTIONS
-  -n, --name=name  name to print
+  -h, --headline=the topic headline or title
+  -s, --style=style name ('purple-orange','orange-purple','blue-green','green-blue','purple-blue','blue-purple')
 
 DESCRIPTION
   ...
-  Extra documentation goes here
+  The resulting image will be created in the current working directory.
 ```
-
-_See code: [src/commands/hello.js](https://github.com/dabblelab/content-cli/blob/v0.0.0/src/commands/hello.js)_
 
 ## `content-cli help [COMMAND]`
 
@@ -64,5 +63,4 @@ OPTIONS
   --all  see all commands in CLI
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2/src/commands/help.ts)_
 <!-- commandsstop -->

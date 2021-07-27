@@ -1,8 +1,8 @@
 {
-  "name": "content-cli",
+  "name": "@dabblelab/content-cli",
   "description": "Command line tool for generating Dabble Lab content and assets.",
-  "version": "0.0.0",
-  "author": "Steve Tingiris",
+  "version": "1.0.1-alpha.0",
+  "author": "Dabble Lab",
   "bin": {
     "content-cli": "./bin/run"
   },
@@ -50,6 +50,8 @@
   "dependencies": {
     "@oclif/command": "^1.8.0",
     "@oclif/config": "^1.17.0",
-    "@oclif/plugin-help": "^3.2.2"
+    "@oclif/plugin-help": "^3.2.2",
+    "canvas": "^2.8.0",
+    "word-wrap": "^1.2.3"
   }
 }
