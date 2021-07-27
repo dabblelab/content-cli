@@ -6,6 +6,9 @@
   "bin": {
     "content-cli": "./bin/run"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "bugs": "https://github.com/dabblelab/content-cli/issues",
   "devDependencies": {
     "@oclif/dev-cli": "^1.22.2",
