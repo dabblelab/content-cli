@@ -2,6 +2,7 @@ const wrap = require('word-wrap')
 const fs = require('fs')
 const util = require('util')
 const {createCanvas, loadImage, registerFont} = require('canvas')
+var appRoot = require('app-root-path')
 
 class ImageGenerator {
   constructor(outputFolder = '.') {
@@ -10,8 +11,8 @@ class ImageGenerator {
 
   createImage(headline, style) {
     return new Promise((resolve, reject) => {
-      registerFont('../assets/fonts/GT-Walsheim-Regular.ttf', {family: 'GT Walsheim', weight: 'regular'})
-      registerFont('../assets/fonts/GT-Walsheim-Ultra-Bold.ttf', {family: 'GT Walsheim', weight: 'bold'})
+      registerFont(appRoot + '/src/lib/assets/fonts/GT-Walsheim-Regular.ttf', {family: 'GT Walsheim', weight: 'regular'})
+      registerFont(appRoot + '/src/lib/assets/fonts/GT-Walsheim-Ultra-Bold.ttf', {family: 'GT Walsheim', weight: 'bold'})
 
       // GitHub: 1280×640px
       const width = 1520
@@ -53,7 +54,7 @@ class ImageGenerator {
       context.fillStyle = gradient
       context.fillText(name, nameX, nameY)
 
-      loadImage('../assets/images/logo-light.png')
+      loadImage(appRoot + '/src/lib/assets/images/logo-light.png')
       .then(image => {
         context.drawImage(image, 160, 160, 360, 72)
         const buffer = canvas.toBuffer('image/png')

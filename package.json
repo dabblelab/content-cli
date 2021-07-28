@@ -1,7 +1,7 @@
 {
   "name": "@dabblelab/content-cli",
   "description": "Command line tool for generating Dabble Lab content and assets.",
-  "version": "1.0.1-alpha.3",
+  "version": "1.0.1-alpha.4",
   "author": "Dabble Lab",
   "bin": {
     "content-cli": "./bin/run"
@@ -54,6 +54,7 @@
     "@oclif/command": "^1.8.0",
     "@oclif/config": "^1.17.0",
     "@oclif/plugin-help": "^3.2.2",
+    "app-root-path": "^3.0.0",
     "canvas": "^2.8.0",
     "word-wrap": "^1.2.3"
   }
