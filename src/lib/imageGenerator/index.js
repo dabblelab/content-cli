@@ -10,8 +10,8 @@ class ImageGenerator {
 
   createImage(headline, style) {
     return new Promise((resolve, reject) => {
-      registerFont('./src/lib/assets/fonts/GT-Walsheim-Regular.ttf', {family: 'GT Walsheim', weight: 'regular'})
-      registerFont('./src/lib/assets/fonts/GT-Walsheim-Ultra-Bold.ttf', {family: 'GT Walsheim', weight: 'bold'})
+      registerFont('../assets/fonts/GT-Walsheim-Regular.ttf', {family: 'GT Walsheim', weight: 'regular'})
+      registerFont('../assets/fonts/GT-Walsheim-Ultra-Bold.ttf', {family: 'GT Walsheim', weight: 'bold'})
 
       // GitHub: 1280×640px
       const width = 1520
@@ -53,7 +53,7 @@ class ImageGenerator {
       context.fillStyle = gradient
       context.fillText(name, nameX, nameY)
 
-      loadImage('./src/lib/assets/images/logo-light.png')
+      loadImage('../assets/images/logo-light.png')
       .then(image => {
         context.drawImage(image, 160, 160, 360, 72)
         const buffer = canvas.toBuffer('image/png')

@@ -4,7 +4,7 @@ const ImageGenerator = require('../lib/imageGenerator')
 class ImageCommand extends Command {
   async run() {
     const {flags} = this.parse(ImageCommand)
-    const outputDir = flags.outputDir || '.'
+    const outputDir = flags.outputDir || './'
     const image = new ImageGenerator(outputDir)
     image.createImage(flags.headline, flags.style)
     .then(result => {

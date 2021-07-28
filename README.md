@@ -14,17 +14,17 @@ Command line tool for generating Dabble Lab content and assets.
 <!-- tocstop -->
 # Usage
 <!-- usage -->
-The Dabble Lab Content CLI is a command line tool for generating Dabble Lab content and assets. To use it, install it globally with `npm install -g content-cli` and then run it with `content-cli`.
-
-1. Installing the CLI
-  ```sh-session
-  $ npm install -g @dabblelab/content-cli
-  ```
-2. After installing the CLI, you can run it with `content-cli` like show below:
-  ```
-  $ content-cli image -h "How to use the Dabble Lab Content CLI" -s orange-purple
-  ```
-The resulting file will be saved in the current working directory and named `image_{timestamp}.png`.
+```sh-session
+$ npm install -g @dabblelab/content-cli
+$ content-cli COMMAND
+running command...
+$ content-cli (-v|--version|version)
+@dabblelab/content-cli/1.0.1-alpha.3 darwin-x64 node-v14.15.0
+$ content-cli --help [COMMAND]
+USAGE
+  $ content-cli COMMAND
+...
+```
 <!-- usagestop -->
 # Commands
 <!-- commands -->
@@ -65,5 +65,5 @@ DESCRIPTION
   Resulting image will be created in the current working directory.
 ```
 
-_See code: [src/commands/image.js](https://github.com/dabblelab/content-cli/blob/v1.0.1-alpha.1/src/commands/image.js)_
+_See code: [src/commands/image.js](https://github.com/dabblelab/content-cli/blob/v1.0.1-alpha.3/src/commands/image.js)_
 <!-- commandsstop -->
