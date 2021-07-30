@@ -4,8 +4,8 @@ Dabble Lab Content CLI
 Command line tool for generating Dabble Lab content and assets.
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/content-cli.svg)](https://npmjs.org/package/content-cli)
-[![Downloads/week](https://img.shields.io/npm/dw/content-cli.svg)](https://npmjs.org/package/content-cli)
+[![Version](https://img.shields.io/npm/v/content-cli.svg)](https://npmjs.org/package/@dabblelab/content-cli)
+[![Downloads/week](https://img.shields.io/npm/dw/content-cli.svg)](https://npmjs.org/package/@dabblelab/content-cli)
 [![License](https://img.shields.io/npm/l/content-cli.svg)](https://github.com/dabblelab/content-cli/blob/master/package.json)
 
 <!-- toc -->
