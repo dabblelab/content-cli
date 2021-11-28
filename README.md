@@ -19,7 +19,7 @@ $ npm install -g @dabblelab/content-cli
 $ content-cli COMMAND
 running command...
 $ content-cli (-v|--version|version)
-@dabblelab/content-cli/1.0.1-alpha.5 darwin-x64 node-v14.15.0
+@dabblelab/content-cli/1.0.1-alpha.6 darwin-x64 node-v14.15.0
 $ content-cli --help [COMMAND]
 USAGE
   $ content-cli COMMAND
@@ -65,5 +65,5 @@ DESCRIPTION
   Resulting image will be created in the current working directory.
 ```
 
-_See code: [src/commands/image.js](https://github.com/dabblelab/content-cli/blob/v1.0.1-alpha.5/src/commands/image.js)_
+_See code: [src/commands/image.js](https://github.com/dabblelab/content-cli/blob/v1.0.1-alpha.6/src/commands/image.js)_
 <!-- commandsstop -->
