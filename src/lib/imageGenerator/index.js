@@ -10,7 +10,6 @@ class ImageGenerator {
   }
 
   createImage(headline, style) {
-
     return new Promise((resolve, reject) => {
       registerFont(path.join(__dirname, '../assets/fonts/GT-Walsheim-Regular.ttf'), {family: 'GT Walsheim', weight: 'regular'})
       registerFont(path.join(__dirname, '../assets/fonts/GT-Walsheim-Ultra-Bold.ttf'), {family: 'GT Walsheim', weight: 'bold'})
@@ -55,7 +54,7 @@ class ImageGenerator {
       context.fillStyle = gradient
       context.fillText(name, nameX, nameY)
 
-      loadImage(path.join(__dirname, "../assets/images/logo-light.png"))
+      loadImage(path.join(__dirname, '../assets/images/logo-light.png'))
       .then(image => {
         context.drawImage(image, 160, 160, 360, 72)
         const buffer = canvas.toBuffer('image/png')

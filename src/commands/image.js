@@ -1,5 +1,5 @@
-const {Command, flags} = require('@oclif/command');
-const ImageGenerator = require('../lib/imageGenerator');
+const {Command, flags} = require('@oclif/command')
+const ImageGenerator = require('../lib/imageGenerator')
 
 class ImageCommand extends Command {
   async run() {
